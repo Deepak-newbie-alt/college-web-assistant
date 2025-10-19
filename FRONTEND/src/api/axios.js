@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000/api',  // change to your backend URL
+  baseURL: 'https://college-web-assistant.onrender.com/api',
 });
 
 // Attach token from localStorage to each request
