@@ -1,0 +1,14 @@
+{
+    "http.proxySupport":"off",
+    "http.proxy": "",
+    "http.proxyStrictSSL": false,
+      "css.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascript",
+    "javascriptreact": "javascript"
+  }
+}
+
+
+

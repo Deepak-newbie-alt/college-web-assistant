@@ -1,0 +1,86 @@
+/* Container styling */
+.notice-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notice-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Access denied message */
+.access-denied {
+  color: darkred;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+/* Form styling */
+.notice-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.notice-form input,
+.notice-form textarea {
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.notice-form input:focus,
+.notice-form textarea:focus {
+  border-color: #007BFF;
+}
+
+/* Submit button */
+.notice-form button {
+  padding: 0.6rem 1.2rem;
+  background-color: #007BFF;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notice-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Message text */
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #006400; /* Green for success by default */
+}
+
+.message:empty {
+  display: none;
+}
+
+/* Adjust color for error messages dynamically */
+.message.error {
+  color: darkred;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .notice-form-container {
+    padding: 1rem;
+  }
+}

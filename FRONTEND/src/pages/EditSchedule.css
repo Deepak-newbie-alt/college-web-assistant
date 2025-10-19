@@ -1,0 +1,193 @@
+/* Container */
+.edit-schedule-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.edit-schedule-container h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Load schedule form */
+.load-schedule-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.load-schedule-form input {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 180px;
+  font-size: 0.95rem;
+}
+
+.load-schedule-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease-in-out;
+}
+
+.load-schedule-form button:hover {
+  background-color: #0069d9;
+}
+
+/* Lecture inputs row */
+.lecture-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.lecture-inputs select,
+.lecture-inputs input {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.lecture-inputs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #28A745;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.lecture-inputs button:hover {
+  background-color: #218838;
+}
+
+/* Messages */
+.message {
+  margin-top: 0.5rem;
+  color: #0062cc;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Timetable preview */
+.timetable-preview {
+  margin-top: 1.5rem;
+}
+
+.timetable-preview h3 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.day-block {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+.day-block h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.day-block ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.day-block li {
+  background: #fff;
+  padding: 0.4rem 0.7rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Remove lecture button */
+.remove-btn {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.remove-btn:hover {
+  background: #c82333;
+}
+
+/* Action buttons */
+.action-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submit-btn:hover {
+  background: #0069d9;
+}
+
+.delete-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.delete-btn:hover {
+  background: #c9302c;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .load-schedule-form,
+  .lecture-inputs {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,112 @@
+.leave-container {
+  max-width: 440px;
+  margin: 3.5rem auto 0 auto;
+  background: #f9fbfe;
+  padding: 2.5rem 2.3rem 2rem 2.3rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(33, 51, 99, 0.16);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.leave-title {
+  margin-bottom: 2rem;
+  color: #2d3a85;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.leave-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.leave-form input,
+.leave-form select,
+.leave-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.07rem;
+  border-radius: 9px;
+  border: 2px solid #b8c7f9;
+  background-color: #f4f8ff;
+  color: #213363;
+  outline: none;
+  transition: border-color 0.22s, box-shadow 0.21s;
+  resize: none;
+}
+
+.leave-form input:focus,
+.leave-form select:focus,
+.leave-form textarea:focus {
+  border-color: #2444c0;
+  box-shadow: 0 0 10px #b3befa66;
+}
+
+.leave-form textarea {
+  min-height: 90px;
+  max-height: 220px;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+.leave-form label {
+  margin-top: 2px;
+  font-size: 1rem;
+  color: #5768c0;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.leave-form button[type="submit"] {
+  width: 100%;
+  margin-top: 6px;
+  padding: 0.95rem 0;
+  font-size: 1.14rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #4158d0 0%, #414cbf 48%, #6da9fa 100%);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 3px 24px #5166df22;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s, transform 0.15s;
+}
+
+.leave-form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #2646a0 40%, #5874e0 100%);
+  box-shadow: 0 6px 28px #4158d062;
+  transform: translateY(-1px) scale(1.02);
+}
+
+.leave-message {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: #4055cfcf;
+  letter-spacing: 0.07em;
+  background: #e8f0fe;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .leave-container {
+    max-width: 97vw;
+    margin: 1.5rem auto 0 auto;
+    padding: 1.6rem 0.7rem 0.7rem 0.7rem;
+    border-radius: 10px;
+  }
+  .leave-title {
+    font-size: 1.45rem;
+  }
+  .leave-form button[type="submit"] {
+    padding: 1rem 0;
+    font-size: 1.08rem;
+  }
+}

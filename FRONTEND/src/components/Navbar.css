@@ -1,0 +1,142 @@
+nav {
+  width: 100vw;
+  background: linear-gradient(90deg, #303f9f 40%, #1976d2 100%);
+  color: white;
+  box-shadow: 0 2px 12px -6px #22306b57;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.7rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Hamburger menu (mobile) */
+.hamburger {
+  background: none;
+  font-size: 2rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  margin-right: 10px;
+}
+
+/* Nav sections */
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.nav-link {
+  color: #c5cae9;
+  text-decoration: none;
+  margin-right: 22px;
+  font-weight: 600;
+  font-size: 1.04rem;
+  transition: color 0.25s;
+  padding: 7px 0;
+  border-radius: 3px;
+}
+
+.nav-link:hover {
+  color: #ffeb3b;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-welcome {
+  font-weight: 600;
+  font-size: 1.07rem;
+  color: #ffd54f;
+  margin-right: 10px;
+}
+
+.nav-logout-button {
+  background: #ffc107;
+  color: #263238;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 10px #3332;
+  transition: background 0.19s, color 0.19s;
+}
+.nav-logout-button:hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+/* Hide nav initially on mobile, shown when open */
+@media (max-width: 800px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.7rem 0.7rem 0 0.7rem;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.32s cubic-bezier(.7,0,.3,1), opacity 0.22s;
+  }
+  .nav-left.open,
+  .nav-right.open {
+    max-height: 400px;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+  .nav-link {
+    margin: 6px 0 6px 0;
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 9px;
+    font-size: 1.12rem;
+  }
+  .nav-logout-button {
+    width: 100%;
+    margin: 10px 0 0 0;
+    font-size: 1.08rem;
+    padding: 10px 0;
+  }
+  .nav-welcome {
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 1.12rem;
+  }
+}
+
+/* For touch screens, increase tap area */
+@media (max-width: 500px) {
+  .nav-link {
+    font-size: 1rem;
+    padding: 12px 12px;
+  }
+  .nav-logout-button {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}

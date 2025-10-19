@@ -1,0 +1,170 @@
+/* Container and background */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  color: #333;
+}
+
+/* Card with glassmorphism */
+.login-card {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3rem 3.5rem 3.5rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #f0f0f5;
+}
+
+/* Heading */
+.login-heading {
+  font-weight: 800;
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.13em;
+  color: #e0e0ff;
+  text-shadow: 0 0 8px #a985ffcc;
+}
+
+/* Form locally */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+/* Floating label input groups */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  padding: 1.3rem 1rem 1.3rem 1rem;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #282828;
+  font-size: 1.15rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  outline: none;
+  transition: background 0.3s, border-color 0.25s;
+}
+
+/* Hide placeholder to implement floating effects */
+.login-input::placeholder {
+  color: transparent;
+}
+
+.input-group label {
+  position: absolute;
+  top: 1.3rem;
+  left: 1.05rem;
+  color: #cbcce5;
+  font-weight: 600;
+  pointer-events: none;
+  transition: all 0.25s ease;
+  font-size: 1.14rem;
+}
+
+/* Floating label behavior */
+.login-input:focus + label,
+.login-input:not(:placeholder-shown) + label {
+  top: -0.52rem;
+  left: 0.9rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #a892ff;
+  text-shadow: 0 0 6px #bbadffcc;
+  border-radius: 8px;
+}
+
+/* Input focus visual */
+.login-input:focus {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: #9f8cff;
+  box-shadow: 0 0 12px #9f8cff88;
+  color: #2a2a4d;
+}
+
+/* Login button styling */
+.login-button {
+  margin-top: 1rem;
+  padding: 1.3rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6a53ff 0%, #4536fa 75%);
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  box-shadow: 0 12px 28px #7d67ffcc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-button:hover,
+.login-button:focus {
+  transform: scale(1.06);
+  box-shadow: 0 15px 42px #6e5affdd;
+  outline: none;
+}
+
+/* Error message */
+.login-error {
+  margin-top: 1.6rem;
+  background: #ffdee3;
+  color: #b32727;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1.03rem;
+  padding: 1rem 1.2rem;
+  user-select: none;
+  box-shadow: 0 4px 10px #e94c5475;
+}
+
+/* Footer below login card */
+.login-footer {
+  margin-top: 1.5rem;
+  color: #dadcff;
+  font-size: 0.93rem;
+  user-select: none;
+}
+
+.login-footer a {
+  color: #a18dff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.25s ease;
+}
+
+.login-footer a:hover {
+  color: #cdc7ff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 2rem 2.5rem 2rem;
+  }
+  .login-heading {
+    font-size: 2rem;
+  }
+  .login-button {
+    font-size: 1.14rem;
+    padding: 1.15rem;
+  }
+}
